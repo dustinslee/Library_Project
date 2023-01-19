@@ -1,0 +1,24 @@
+#table {
+  min-width: 680px; 
+  margin: 2rem;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.removeBtn {
+  color: red;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

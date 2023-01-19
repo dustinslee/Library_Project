@@ -4,47 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library Project</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <main
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      "
-    >
+    <main>
       <div>
-        <h1>Library Project</h1>
+        <h1>Library</h1>
         <div id="library">
           <!-- Add table here -->
-          <table id="table" style="min-width: 680px; margin: 2rem">
+          <table id="table">
             <thead>
               <tr>
                 <th>Title</th>
                 <th>Author</th>
                 <th>Read</th>
+                <th>Remove</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Name of the Wind</td>
-                <td>Patrick Rothfuss</td>
-                <td>
-                  <input
-                    type="checkbox"
-                    name="read"
-                    id="readLibraryCheckbox"
-                    checked
-                    disabled
-                  />
-                </td>
-              </tr>
+            <tbody id="libraryList">
             </tbody>
           </table>
         </div>
+        <div>
+          <div id="input-container">
+            <div>
+              <label for="titleInput">Title</label><br>
+              <input id="titleInput" type="text" name="title" value="">
+            </div>
+            <div>
+              <label for="authorInput">Author</label><br>
+              <input id="authorInput" type="text" name="author" value="">
+            </div>
+            <div>
+              <label for="readCheckbox">Read</label>
+              <input id="readCheckbox" type="checkbox" name="read" />
+            </div>
+            <div>
+              <input id="addBook" type="submit">
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
-    <script src="app.js"></script>
   </body>
 </html>
